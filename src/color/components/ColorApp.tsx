@@ -4,7 +4,7 @@ import ColorViewer from "./ColorViewer"
 import { ColorWheelProvider } from '../interfaces/ColorWheel'
 
 function ColorApp() {
-    const [colorWheel, setColorWheel] = useState(new ColorWheelProvider("#000000"))
+    const [colorWheel, setColorWheel] = useState(new ColorWheelProvider("#FF0000"))
 
     return (<div>
         {colorPicker(colorWheel, setColorWheel)}
