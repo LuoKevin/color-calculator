@@ -6,11 +6,14 @@ import {ColorBox} from './ColorViewer';
 function RowMultDisplay(label: string, colors: string[]) {
     const rowStyle = {
         display: 'inline-block',
-
     };
+    const displayStyle = {
+        display: 'flex',
+        justifyContent: 'flex-end',
+    }
     return (
-        <div>
-            {label}   {colors.map(color => (<div style={rowStyle}> {ColorBox(color)}</div>))}
+        <div style={rowStyle}>
+            {label}{colors.map(color => (<div style={rowStyle}> {ColorBox(color)}</div>))}
         </div>)
 }
 

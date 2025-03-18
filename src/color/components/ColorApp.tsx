@@ -6,7 +6,11 @@ import { ColorWheelProvider } from '../interfaces/ColorWheel'
 function ColorApp() {
     const [colorWheel, setColorWheel] = useState(new ColorWheelProvider("#FF0000"))
 
-    return (<div>
+    const appStyle = {
+
+    }
+
+    return (<div style={appStyle}>
         {colorPicker(colorWheel, setColorWheel)}
         {ColorViewer(colorWheel)}
     </div>)

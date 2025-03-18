@@ -12,8 +12,9 @@ function ColorViewer(colorWheel: ColorWheel) {
         <div >
             <div style={viewerStyle}>{RowDisplay("Main Color", colorWheel.mainColor)}</div>
             <br />
-             {RowDisplay("Complementary Color", colorWheel.complementaryColor)}
-            {RowMultDisplay("Analogous Colors", colorWheel.analogousColors)}
+            <div style={viewerStyle}>{RowMultDisplay("Complementary Color", [colorWheel.complementaryColor])}</div>
+            <br />
+            <div style={viewerStyle}>{RowMultDisplay("Analogous Colors", colorWheel.analogousColors)}</div>
         </div>
     )
 }
