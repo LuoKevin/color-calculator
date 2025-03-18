@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "vitest": "vitest run"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-color": "^3.0.13"
+    "@types/react-color": "^3.0.13",
+    "vitest": "^3.0.9"
   }
 }

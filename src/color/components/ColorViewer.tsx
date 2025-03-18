@@ -1,13 +1,17 @@
 import React from 'react';
 import ColorCalculator from '../calculators/ColorCalculator'
+import ColorWheel from '../interfaces/ColorWheel';
 
 const colorCalculator = new ColorCalculator()
 const complementary = colorCalculator.complementary
 
-function ColorViewer(colorValue: string) {
+
+function ColorViewer(colorWheel: ColorWheel) {
     return (
         <div>
-            {ColorBox(colorValue)}
+            {ColorBox(colorWheel.mainColor)}
+            {ColorBox(colorWheel.complementaryColor)}
+
         </div>
     )
 }

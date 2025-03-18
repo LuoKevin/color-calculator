@@ -1,15 +1,16 @@
 import React from 'react';
 import { SketchPicker, ColorChangeHandler } from 'react-color';
+import ColorWheel, { ColorWheelProvider } from '../interfaces/ColorWheel';
 
 
-function colorPicker(colorValue: string, setColor:React.Dispatch<React.SetStateAction<string>>)  {
+function colorPicker(colorWheel: ColorWheel, setColor:React.Dispatch<React.SetStateAction<ColorWheelProvider>>)  {
 
     const onChangeColor: ColorChangeHandler = (color, event) => {
-        setColor(color.hex);
+        setColor(new ColorWheelProvider(color.hex));
     }
 
     return <SketchPicker
-        color={colorValue}
+        color={colorWheel.mainColor}
         onChange={onChangeColor}
         onChangeComplete={onChangeColor}
 
