@@ -1,5 +1,5 @@
 import React from 'react';
-import {ColorBox} from './ColorViewer';
+import ColorBox from './ColorBox';
 
 //Displays Color with label
 

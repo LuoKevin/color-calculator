@@ -1,4 +1,3 @@
-import analColors from "../calculators/analColors";
 import ColorCalc from "../calculators/ColorCalc";
 
 
@@ -11,10 +10,10 @@ export default interface ColorWheel {
 }
 
 export class ColorWheelProvider implements ColorWheel {
-    constructor(private readonly color: string) {
+    constructor(color: string) {
         this.mainColor = color
         this.complementaryColor = colCalc.compColor(color)
-        this.analogousColors = analColors(color)
+        this.analogousColors = colCalc.analColors(color)
     }
     mainColor: string
     complementaryColor: string

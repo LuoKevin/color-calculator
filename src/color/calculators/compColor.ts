@@ -1,4 +1,4 @@
-export default function rgbCompColor(hex: string): string {
+export default function compColor(hex: string): string {
     // Ensure the hex starts with # and is 7 characters long
     if (!hex.startsWith('#')) { hex = '#' + hex }
     if (!/^#([0-9A-Fa-f]{6})$/.test(hex)) {

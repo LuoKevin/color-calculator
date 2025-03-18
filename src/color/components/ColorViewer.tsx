@@ -19,15 +19,4 @@ function ColorViewer(colorWheel: ColorWheel) {
     )
 }
 
-export function ColorBox(colorValue: string) {
-    const boxStyle = {
-        backgroundColor: colorValue,
-        width: 100,
-        height: 100,
-        display: 'inline-block',
-    };
-
-    return (<div style={boxStyle}></div>)
-}
-
 export default ColorViewer;

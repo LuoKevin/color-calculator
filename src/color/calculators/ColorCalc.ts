@@ -1,5 +1,7 @@
-import rgbCompColor from './rgbCompColor'
+import analColors from './analColors'
+import compColor from './compColor'
 
 export default class ColorCalc {
-    compColor = rgbCompColor
+    compColor = compColor
+    analColors = analColors
 }

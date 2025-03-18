@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChromePicker, ColorChangeHandler } from 'react-color';
+import { CirclePicker, ColorChangeHandler } from 'react-color';
 import ColorWheel, { ColorWheelProvider } from '../interfaces/ColorWheel';
 
 
@@ -9,7 +9,7 @@ function colorPicker(colorWheel: ColorWheel, setColor:React.Dispatch<React.SetSt
         setColor(new ColorWheelProvider(color.hex));
     }
 
-    return <ChromePicker
+    return <CirclePicker
         color={colorWheel.mainColor}
         onChange={onChangeColor}
         onChangeComplete={onChangeColor}
