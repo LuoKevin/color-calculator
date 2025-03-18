@@ -1,17 +1,17 @@
-import ColorCalculator from "../calculators/ColorCalculator";
-import rgbCompColor from "../calculators/rgbCompColor";
+import ColorCalc from "../calculators/ColorCalc";
+
+
+const colCalc = new ColorCalc()
 
 export default interface ColorWheel {
     mainColor: string;
     complementaryColor: string;
 }
 
-let colorCalculator = new ColorCalculator()
-
 export class ColorWheelProvider implements ColorWheel {
     constructor(private readonly color: string) {
         this.mainColor = color
-        this.complementaryColor = rgbCompColor(color)
+        this.complementaryColor = colCalc.compColor(color)
     }
     mainColor: string
     complementaryColor: string

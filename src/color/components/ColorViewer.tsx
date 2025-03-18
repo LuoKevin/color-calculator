@@ -1,26 +1,27 @@
 import React from 'react';
-import ColorCalculator from '../calculators/ColorCalculator'
 import ColorWheel from '../interfaces/ColorWheel';
-
-const colorCalculator = new ColorCalculator()
-const complementary = colorCalculator.complementary
-
+import RowDisplay from './RowDisplay';
 
 function ColorViewer(colorWheel: ColorWheel) {
+    const viewerStyle = {
+        display: 'flex',
+        justifyContent: 'flex-end'
+    }
     return (
-        <div>
-            {ColorBox(colorWheel.mainColor)}
-            {ColorBox(colorWheel.complementaryColor)}
-
+        <div >
+            <div style={viewerStyle}>{RowDisplay("Main Color", colorWheel.mainColor)}</div>
+            <br />
+             {RowDisplay("Complementary Color", colorWheel.complementaryColor)}
         </div>
     )
 }
 
-function ColorBox(colorValue: string) {
+export function ColorBox(colorValue: string) {
     const boxStyle = {
         backgroundColor: colorValue,
         width: 100,
         height: 100,
+        display: 'inline-block',
     };
 
     return (<div style={boxStyle}></div>)

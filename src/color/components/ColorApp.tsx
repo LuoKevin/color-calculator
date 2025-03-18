@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import colorPicker from './ColorPicker';
 import ColorViewer from "./ColorViewer"
-import ColorCalculator from '../calculators/ColorCalculator';
 import { ColorWheelProvider } from '../interfaces/ColorWheel'
 
 function ColorApp() {
