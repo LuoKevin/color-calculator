@@ -6,9 +6,11 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                Color Calculator
-                <ColorApp/>
+                <div>Color Calculator</div>
             </header>
+            <div className="App-body">
+                <ColorApp/>
+            </div>
         </div>
     );
 }

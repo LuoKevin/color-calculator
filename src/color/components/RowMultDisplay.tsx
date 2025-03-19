@@ -14,13 +14,24 @@ function RowMultDisplay(label: string, colors: string[]) {
         justifyContent: 'flex-start',
     }
 
+    const colorBoxStyle = {
+        display: 'flex',
+        flexDirection: 'column' as 'column',
+    }
+    const textStyle = {
+        fontSize: "100%",
+        fontWeight: 'normal',
+    }
+
     return (
         <div>
             <div style={labelStyle}>
                 {label}
             </div>
             <div style={rowStyle}>
-                {colors.map(color => (<div> {ColorBox(color)}</div>))}
+                {colors.map(color => (<div style={colorBoxStyle}>
+                    {ColorBox(color)}
+                </div>))}
             </div>
         </div>)
 }
