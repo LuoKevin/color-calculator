@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/color-calculator/static/css/main.da32f9ec.css",
+    "main.js": "/color-calculator/static/js/main.05a5b66e.js",
+    "static/js/453.c6de055d.chunk.js": "/color-calculator/static/js/453.c6de055d.chunk.js",
+    "index.html": "/color-calculator/index.html",
+    "main.da32f9ec.css.map": "/color-calculator/static/css/main.da32f9ec.css.map",
+    "main.05a5b66e.js.map": "/color-calculator/static/js/main.05a5b66e.js.map",
+    "453.c6de055d.chunk.js.map": "/color-calculator/static/js/453.c6de055d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da32f9ec.css",
+    "static/js/main.05a5b66e.js"
+  ]
+}
