@@ -5,15 +5,22 @@ import ColorBox from './ColorBox';
 
 function RowMultDisplay(label: string, colors: string[]) {
     const rowStyle = {
-        display: 'inline-block',
-    };
-    const displayStyle = {
         display: 'flex',
-        justifyContent: 'flex-end',
     }
+
+    const labelStyle = {
+        display: 'flex',
+    }
+
     return (
-        <div style={rowStyle}>
-            {label}{colors.map(color => (<div style={rowStyle}> {ColorBox(color)}</div>))}
+        <div>
+
+            <div style={labelStyle}>
+                {label}
+            </div>
+            <div style={rowStyle}>
+                {colors.map(color => (<div> {ColorBox(color)}</div>))}
+            </div>
         </div>)
 }
 

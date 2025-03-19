@@ -4,6 +4,7 @@ import monoColors from './monoColors'
 import splitCompColors from './splitCompColors'
 import triadicColors from './triadicColors'
 import squareColors from './squareColors'
+import rectangleColors from './rectangleColors'
 
 export default class ColorCalc {
     compColor = compColor
@@ -12,4 +13,5 @@ export default class ColorCalc {
     splitCompColors = splitCompColors
     triadicColors = triadicColors
     squareColors = squareColors
+    rectangleColors = rectangleColors
 }

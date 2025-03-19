@@ -10,6 +10,7 @@ export default interface ColorWheel {
     splitComplementaryColors: string[];
     triadicColors: string[];
     squareColors: string[];
+    rectangleColors: string[];
 }
 
 export class ColorWheelProvider implements ColorWheel {
@@ -21,6 +22,7 @@ export class ColorWheelProvider implements ColorWheel {
         this.splitComplementaryColors = colCalc.splitCompColors(color)
         this.triadicColors = colCalc.triadicColors(color)
         this.squareColors = colCalc.squareColors(color)
+        this.rectangleColors = colCalc.rectangleColors(color)
     }
     mainColor: string
     complementaryColor: string[]
@@ -29,4 +31,5 @@ export class ColorWheelProvider implements ColorWheel {
     splitComplementaryColors: string[]
     triadicColors: string[]
     squareColors: string[]
+    rectangleColors: string[]
 }
