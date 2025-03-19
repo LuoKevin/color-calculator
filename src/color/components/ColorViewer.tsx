@@ -1,6 +1,5 @@
 import React from 'react';
 import ColorWheel from '../interfaces/ColorWheel';
-import RowDisplay from './RowDisplay';
 import RowMultDisplay from './RowMultDisplay';
 
 function ColorViewer(colorWheel: ColorWheel) {
@@ -8,13 +7,22 @@ function ColorViewer(colorWheel: ColorWheel) {
         display: 'flex',
         justifyContent: 'flex-end'
     }
+    let mainColor = colorWheel.mainColor;
     return (
-        <div >
-            <div style={viewerStyle}>{RowDisplay("Main Color", colorWheel.mainColor)}</div>
-            <br />
-            <div style={viewerStyle}>{RowMultDisplay("Complementary Color", [colorWheel.complementaryColor])}</div>
-            <br />
-            <div style={viewerStyle}>{RowMultDisplay("Analogous Colors", colorWheel.analogousColors)}</div>
+        <div>
+            <div style={viewerStyle}>{RowMultDisplay("Main Color", [mainColor])}</div>
+            <br/>
+            <div style={viewerStyle}>
+                {RowMultDisplay("Monochromatic ", colorWheel.monochromaticColors)}
+            </div>
+            <br/>
+            <div style={viewerStyle}>
+                {RowMultDisplay("Complementary ", [colorWheel.complementaryColor, mainColor])}
+            </div>
+            <br/>
+            <div style={viewerStyle}>
+                {RowMultDisplay("Analogous ", colorWheel.analogousColors.concat(mainColor))}
+            </div>
         </div>
     )
 }
