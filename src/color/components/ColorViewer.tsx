@@ -12,7 +12,7 @@ function ColorViewer(colorWheel: ColorWheel) {
     }
     const boxStyle = {
         display: 'flex',
-        gap: "10px",
+        gap: "2vh",
         flexDirection: 'column' as 'column',
     }
     return (
