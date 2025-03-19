@@ -9,7 +9,6 @@ function colorPicker(colorWheel: ColorWheel, setColor: React.Dispatch<React.SetS
         setColor(new ColorWheelProvider(color.hex));
     }
 
-
     const colorPickerStyle = {
         display: 'flex',
         flexDirection: 'column' as 'column',

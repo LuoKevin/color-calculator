@@ -18,10 +18,6 @@ function RowMultDisplay(label: string, colors: string[]) {
         display: 'flex',
         flexDirection: 'column' as 'column',
     }
-    const textStyle = {
-        fontSize: "100%",
-        fontWeight: 'normal',
-    }
 
     return (
         <div>
