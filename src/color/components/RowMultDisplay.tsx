@@ -6,15 +6,16 @@ import ColorBox from './ColorBox';
 function RowMultDisplay(label: string, colors: string[]) {
     const rowStyle = {
         display: 'flex',
+        justifyContent: 'flex-start',
     }
 
     const labelStyle = {
         display: 'flex',
+        justifyContent: 'flex-start',
     }
 
     return (
         <div>
-
             <div style={labelStyle}>
                 {label}
             </div>
@@ -25,6 +26,3 @@ function RowMultDisplay(label: string, colors: string[]) {
 }
 
 export default RowMultDisplay;
-
-
-// <div style={rowStyle}> {label}  {ColorBox(hex)} </div>

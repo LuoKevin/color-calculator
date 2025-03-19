@@ -4,12 +4,12 @@ import RowMultDisplay from './RowMultDisplay';
 
 function ColorViewer(colorWheel: ColorWheel) {
     const viewerStyle = {
-        display: 'flex',
-        // justifyContent: 'flex-end'
+        // display: 'flex',
     }
     const boxStyle = {
-        // backgroundColor : colorWheel.mainColor
-        justifyContent: 'space-between',
+        display: 'flex',
+        gap: "10px",
+        flexDirection: 'column' as 'column',
     }
     return (
         <div style={boxStyle}>

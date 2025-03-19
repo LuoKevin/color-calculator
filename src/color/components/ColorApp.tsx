@@ -7,12 +7,13 @@ function ColorApp() {
     const [colorWheel, setColorWheel] = useState(new ColorWheelProvider("#FF0000"))
 
     const appStyle = {
-
+        display: 'flex',
+        flexDirection: 'column' as 'column',
     }
 
     return (<div style={appStyle}>
-        {colorPicker(colorWheel, setColorWheel)}
-        {ColorViewer(colorWheel)}
+        <div>{colorPicker(colorWheel, setColorWheel)}</div>
+        <div>{ColorViewer(colorWheel)}</div>
     </div>)
 }
 

@@ -24,6 +24,7 @@ export class ColorWheelProvider implements ColorWheel {
         this.squareColors = colCalc.squareColors(color)
         this.rectangleColors = colCalc.rectangleColors(color)
     }
+
     mainColor: string
     complementaryColor: string[]
     analogousColors: string[]
