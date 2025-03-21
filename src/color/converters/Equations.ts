@@ -1,10 +1,9 @@
-
 export function hexToRgb(hex: string): { r: number, g: number, b: number } {
     const cleanHex = hex.replace(/^#/, '');
     const r = parseInt(cleanHex.substr(0, 2), 16);
     const g = parseInt(cleanHex.substr(2, 2), 16);
     const b = parseInt(cleanHex.substr(4, 2), 16);
-    return { r, g, b };
+    return {r, g, b};
 }
 
 export function rgbToHex(r: number, g: number, b: number): string {

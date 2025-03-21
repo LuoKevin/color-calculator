@@ -4,7 +4,6 @@ import RowMultDisplay from './RowMultDisplay';
 
 function ColorViewer(colorWheel: ColorWheel) {
     const viewerStyle = {
-        // display: 'flex',
         color: 'white',
         fontSize: '25px',
         fontWeight: 'bold',

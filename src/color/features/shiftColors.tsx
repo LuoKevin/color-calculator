@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {hexToHsl, hslToHex} from '../converters/Equations'
 
-
-export function shiftColors(initialColor: string, interval = 100) {
+export default function shiftColors(initialColor: string, interval = 100) {
     const [color, setColor] = useState(initialColor);
 
     useEffect(() => {
