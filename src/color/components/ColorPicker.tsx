@@ -1,9 +1,9 @@
-import React from 'react';
 import {ChromePicker, ColorChangeHandler, SwatchesPicker} from 'react-color';
 import ColorWheel, {ColorWheelProvider} from '../interfaces/ColorWheel';
+import RaveButton from './RaveButton';
 
 
-function colorPicker(colorWheel: ColorWheel, setColor: React.Dispatch<React.SetStateAction<ColorWheelProvider>>) {
+function ColorPicker(colorWheel: ColorWheel, setColor: React.Dispatch<React.SetStateAction<ColorWheelProvider>>) {
 
     const onChangeColor: ColorChangeHandler = (color, event) => {
         setColor(new ColorWheelProvider(color.hex));
@@ -29,8 +29,9 @@ function colorPicker(colorWheel: ColorWheel, setColor: React.Dispatch<React.SetS
                             onChangeComplete={onChangeColor}
                             height={400}
             />
+            <div>{RaveButton(colorWheel, setColor)}</div>
         </div>
     )
 }
 
-export default colorPicker;
+export default ColorPicker;
